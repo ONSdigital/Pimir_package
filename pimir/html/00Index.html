@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Apply the Perpetual Inventory Method to a time series of GFCF to
+obtain a value for the gross/net/productive stock</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> Apply the Perpetual Inventory Method to a time series of GFCF to
+obtain a value for the gross/net/productive stock
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;pimir&rsquo; version 1.0.0</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="calcCohortProfile.html">calcCohortProfile</a></td>
+<td>Combines a given retirement distribution and individual asset price (or efficiency) profile to give the price (or efficiency) profile of a cohort of assets. Depending on the given combination method either the weighted average method is used or the fixed profile method.</td></tr>
+<tr><td style="width: 25%;"><a href="calcNetStock.html">calcNetStock</a></td>
+<td>Calculate the net stock by correcting the given GFCF values for the combined age-price and retirement distribution</td></tr>
+<tr><td style="width: 25%;"><a href="calcProductiveStock.html">calcProductiveStock</a></td>
+<td>Calculate the productive stock by correcting the given GFCF values for the combined age-efficiency and retirement distribution. This function is almost identical to 'CalcNetStock'. The duplication is deliberate in case there might be Productive Stock specific changes in the future.</td></tr>
+<tr><td style="width: 25%;"><a href="calcSurvivalValues.html">calcSurvivalValues</a></td>
+<td>Calculate the survival values for each vintage given life length parameters and retirement distribution</td></tr>
+<tr><td style="width: 25%;"><a href="cohortProfileOne.html">cohortProfileOne</a></td>
+<td>Combines a given retirement distribution and individual asset price (or efficiency) profile to give the price (or efficiency) profile of a cohort of assets. This version of the function uses the weighted average method of combining the two inputs.</td></tr>
+<tr><td style="width: 25%;"><a href="cohortProfileTwo.html">cohortProfileTwo</a></td>
+<td>Combines a given retirement distribution and individual asset price (or efficiency) profile to give the price (or efficiency) profile of a cohort of assets. This version of the function uses the fixed profile method of combining the two inputs.</td></tr>
+<tr><td style="width: 25%;"><a href="const.html">const</a></td>
+<td>Constant profile function: asset retains full value (productive capacity) until the point where it retires (given by T)</td></tr>
+<tr><td style="width: 25%;"><a href="convertProfileToMatrix.html">convertProfileToMatrix</a></td>
+<td>Convert the given data.frame containing vectors to a matrix where each vector is shifted forwards by it's id</td></tr>
+<tr><td style="width: 25%;"><a href="db.html">db</a></td>
+<td>Declining Balance profile function: similar to geometric decay but now rate of decay represents the declining balance rate</td></tr>
+<tr><td style="width: 25%;"><a href="dhyperform.html">dhyperform</a></td>
+<td>Density function for a hyperbolic curve</td></tr>
+<tr><td style="width: 25%;"><a href="efficiencyToPriceProfile.html">efficiencyToPriceProfile</a></td>
+<td>Convert a efficiency profile to a price (depreciation) profile</td></tr>
+<tr><td style="width: 25%;"><a href="geom.html">geom</a></td>
+<td>Geometric profile function: pattern of depreciation (deterioration) is geometric</td></tr>
+<tr><td style="width: 25%;"><a href="getSurvivalValues.html">getSurvivalValues</a></td>
+<td>Calculate the survival values given a combination of parameters</td></tr>
+<tr><td style="width: 25%;"><a href="hyp.html">hyp</a></td>
+<td>Hyperbolic profile function: pattern of depreciation (deterioration) is slow at first and increasing with the number of periods</td></tr>
+<tr><td style="width: 25%;"><a href="lin.html">lin</a></td>
+<td>(Delayed) Linear profile function: value (productive capacity) of asset declines linearly after a given number of periods (delay)</td></tr>
+<tr><td style="width: 25%;"><a href="phyperform.html">phyperform</a></td>
+<td>Distribution function for a hyperbolic curve</td></tr>
+<tr><td style="width: 25%;"><a href="pim.html">pim</a></td>
+<td>Apply the perpetual inventory method to a time series of GCFC</td></tr>
+<tr><td style="width: 25%;"><a href="pimConfig.html">pimConfig</a></td>
+<td>Configuration parameters for the calculation of gross/productive/net stock using the perpetual inventory method</td></tr>
+<tr><td style="width: 25%;"><a href="priceToEfficiencyProfile.html">priceToEfficiencyProfile</a></td>
+<td>Convert a price (depreciation)profile to a efficiency profile</td></tr>
+<tr><td style="width: 25%;"><a href="run.html">run</a></td>
+<td>Apply the Perpetual Inventory Method to a timeseries of GFCF to obtain a timeseries of gross/productive/net stock</td></tr>
+<tr><td style="width: 25%;"><a href="transformGammaParameters.html">transformGammaParameters</a></td>
+<td>Returns the shape and rate parameters of a Gamma distribution based on the given parameters</td></tr>
+<tr><td style="width: 25%;"><a href="transformLogNormalParameters.html">transformLogNormalParameters</a></td>
+<td>Returns the mean and standard deviation of a Log Normal distribution based on the given parameters</td></tr>
+<tr><td style="width: 25%;"><a href="transformNormalParameters.html">transformNormalParameters</a></td>
+<td>Returns the mean and standard deviation of a Normal distribution based on the given parameters</td></tr>
+<tr><td style="width: 25%;"><a href="transformWeibullParameters.html">transformWeibullParameters</a></td>
+<td>Returns the shape and scale parameters of a Weibull distribution based on the given parameters</td></tr>
+<tr><td style="width: 25%;"><a href="transformWeibullParametersInverse.html">transformWeibullParametersInverse</a></td>
+<td>The inverse of transformWeibullParameter: for a given shape and scale this gives the mean and coefficient of variation of the corresponding Weibull distribution</td></tr>
+</table>
+</div></body></html>

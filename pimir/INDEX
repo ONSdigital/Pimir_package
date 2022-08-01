@@ -1,0 +1,89 @@
+calcCohortProfile       Combines a given retirement distribution and
+                        individual asset price (or efficiency) profile
+                        to give the price (or efficiency) profile of a
+                        cohort of assets. Depending on the given
+                        combination method either the weighted average
+                        method is used or the fixed profile method.
+calcNetStock            Calculate the net stock by correcting the given
+                        GFCF values for the combined age-price and
+                        retirement distribution
+calcProductiveStock     Calculate the productive stock by correcting
+                        the given GFCF values for the combined
+                        age-efficiency and retirement distribution.
+                        This function is almost identical to
+                        'CalcNetStock'. The duplication is deliberate
+                        in case there might be Productive Stock
+                        specific changes in the future.
+calcSurvivalValues      Calculate the survival values for each vintage
+                        given life length parameters and retirement
+                        distribution
+cohortProfileOne        Combines a given retirement distribution and
+                        individual asset price (or efficiency) profile
+                        to give the price (or efficiency) profile of a
+                        cohort of assets. This version of the function
+                        uses the weighted average method of combining
+                        the two inputs.
+cohortProfileTwo        Combines a given retirement distribution and
+                        individual asset price (or efficiency) profile
+                        to give the price (or efficiency) profile of a
+                        cohort of assets. This version of the function
+                        uses the fixed profile method of combining the
+                        two inputs.
+const                   Constant profile function: asset retains full
+                        value (productive capacity) until the point
+                        where it retires (given by T)
+convertProfileToMatrix
+                        Convert the given data.frame containing vectors
+                        to a matrix where each vector is shifted
+                        forwards by it's id
+db                      Declining Balance profile function: similar to
+                        geometric decay but now rate of decay
+                        represents the declining balance rate
+dhyperform              Density function for a hyperbolic curve
+efficiencyToPriceProfile
+                        Convert a efficiency profile to a price
+                        (depreciation) profile
+geom                    Geometric profile function: pattern of
+                        depreciation (deterioration) is geometric
+getSurvivalValues       Calculate the survival values given a
+                        combination of parameters
+hyp                     Hyperbolic profile function: pattern of
+                        depreciation (deterioration) is slow at first
+                        and increasing with the number of periods
+lin                     (Delayed) Linear profile function: value
+                        (productive capacity) of asset declines
+                        linearly after a given number of periods
+                        (delay)
+phyperform              Distribution function for a hyperbolic curve
+pim                     Apply the perpetual inventory method to a time
+                        series of GCFC
+pimConfig               Configuration parameters for the calculation of
+                        gross/productive/net stock using the perpetual
+                        inventory method
+priceToEfficiencyProfile
+                        Convert a price (depreciation)profile to a
+                        efficiency profile
+run                     Apply the Perpetual Inventory Method to a
+                        timeseries of GFCF to obtain a timeseries of
+                        gross/productive/net stock
+transformGammaParameters
+                        Returns the shape and rate parameters of a
+                        Gamma distribution based on the given
+                        parameters
+transformLogNormalParameters
+                        Returns the mean and standard deviation of a
+                        Log Normal distribution based on the given
+                        parameters
+transformNormalParameters
+                        Returns the mean and standard deviation of a
+                        Normal distribution based on the given
+                        parameters
+transformWeibullParameters
+                        Returns the shape and scale parameters of a
+                        Weibull distribution based on the given
+                        parameters
+transformWeibullParametersInverse
+                        The inverse of transformWeibullParameter: for a
+                        given shape and scale this gives the mean and
+                        coefficient of variation of the corresponding
+                        Weibull distribution
